@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #202124;
+}
+
+/* Cabeçalho */
+
+header {
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+/* Conteúdo */
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.topo h1 {
+    font-size: 28px;
+}
+
+/* Botão upload */
+
+.upload-area {
+    background: white;
+    border: 2px dashed #d0d5dd;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.upload-area p {
+    margin-bottom: 15px;
+    color: #667085;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+button {
+    background: #4285f4;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #3367d6;
+}
+
+/* Arquivos */
+
+.arquivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.arquivo {
+    background: white;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.arquivo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.icone {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.nome {
+    font-weight: bold;
+    word-break: break-word;
+    margin-bottom: 15px;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+.acoes a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.download {
+    background: #e8f0fe;
+    color: #1967d2;
+}
+
+.excluir {
+    background: #fee4e2;
+    color: #d92d20;
+}
